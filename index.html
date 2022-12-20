@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/hw-favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/index.js" defer></script>
+    <title>Healthy Weight</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav en">
+        <img
+          src="img/hw-logo.svg"
+          alt="Healthy weight logo"
+          class="nav__logo"
+        />
+        <ul class="nav__content">
+          <li class="nav__content--item nav_weight">My Healthy Weight</li>
+        </ul>
+        <ul class="nav__content">
+          <li class="nav__content--item nav_bmi">The BMI</li>
+        </ul>
+        <ul class="nav__content">
+          <li class="nav__content--item nav_lang">Settings</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hw__container metric">
+        <div class="hw__container__content">
+          <p class="hw__container__content--header">Healthy Weight</p>
+          <div class="hw__container__content--kg">
+            <p class="hw__container__content--kg__text">Enter your weight</p>
+            <input
+              type="number"
+              min="0"
+              placeholder="KG"
+              class="hw__container__content--kg__input"
+            />
+          </div>
+          <div class="hw__container__content--hg">
+            <p class="hw__container__content--hg__text">Enter your height</p>
+            <input
+              type="number"
+              min="0"
+              placeholder="M"
+              class="hw__container__content--hg__input"
+            />
+          </div>
+          <button class="hw__container__content--btn">show results</button>
+          <p class="hw__container__content--error hidden">
+            You must enter your height/weight
+          </p>
+          <div class="hw__container__content--result">
+            <span class="hw__container__content--result-place">
+              The results will be displayed here
+            </span>
+            <span class="hw__container__content--result-good hidden">
+              Your weight is healthy
+            </span>
+            <span class="hw__container__content--result-bad hidden">
+              Your weight is not healthy
+            </span>
+            <div class="hw__container__content--result-bmi hidden">
+              your BMI
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bmi__container">
+        <div class="bmi__container__content">
+          <p class="bmi__container__content--header">
+            We know your ideal weight
+          </p>
+          <p class="bmi__container__content--info">
+            We do it through the BMI. These acronyms stand for body mass index.
+            Thanks to it we can make a formula that tells us the total body fat
+            and if a person has a healthy weight. Excess body fat is linked to
+            an increased risk of some diseases, including heart disease and some
+            types of cancer.
+          </p>
+          <a
+            href="https://en.wikipedia.org/wiki/Body_mass_index"
+            target="_blank"
+            class="bmi__container__content--btn"
+            >Learn more here</a
+          >
+        </div>
+      </div>
+      <div class="lang__container">
+        <div class="lang__container__content">
+          <p class="lang__container__content--title">SETTINGS</p>
+          <p class="lang__container__content--header">Change the language</p>
+          <p class="lang__container__content--info">
+            Select down here the language.
+          </p>
+          <button class="lang__container__content--btn_es">Español</button>
+          <button class="lang__container__content--btn_en">English</button>
+          <p class="lang__container__content--header-two">Change the units</p>
+          <p class="lang__container__content--info-two">
+            Select down here the units.
+          </p>
+          <button class="lang__container__content--btn_met">Metric</button>
+          <button class="lang__container__content--btn_imp">Imperial</button>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer__content">
+          <p class="footer__content--dev">Developed by Goorezy</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
